@@ -118,8 +118,14 @@ params:
             id:
 
     widgets:
-        homepage: []
-        page: []
+        homepage: 
+            - type: search
+            - type: tag-cloud
+            - type: archives
+        page:
+            - type: search
+            - type: tag-cloud
+            - type: archives
 
     opengraph:
         twitter:
