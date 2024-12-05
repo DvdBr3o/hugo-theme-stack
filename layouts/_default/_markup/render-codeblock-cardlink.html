@@ -1,5 +1,5 @@
 {{ $data := transform.Unmarshal .Inner }} <!-- 将 Inner 内容解析为 dict -->
 
-<!-- <a href={{ index $data "url" }} target="_blank" data-tag="cardlink"></a> -->
+<a href={{ index $data "url" }} target="_blank" data-tag="cardlink"></a>
 
 {{ .Page.Store.Set "hasCardlink" true }}
