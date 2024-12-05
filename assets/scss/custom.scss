@@ -409,6 +409,14 @@
 
   [data-scheme="light"] pre {
     color: #34495e;
-    background-color: #fff9f3;
+    background-color: #ecf0f1;
+  }
+  
+  [data-scheme="dark"] .card-link .card-link-content {
+    background-color: #595959;
+  }
+
+  [data-scheme="dark"] .card-link .card-link-title {
+    color: #ecf0f1;
   }
   
