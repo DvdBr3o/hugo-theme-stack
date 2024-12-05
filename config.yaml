@@ -126,6 +126,7 @@ params:
             - type: search
             - type: tag-cloud
             - type: archives
+            - type: toc
 
     opengraph:
         twitter:

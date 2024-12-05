@@ -65,3 +65,9 @@
         }
     }
 }
+
+/* Toc */
+.widget.toc  {
+    flex-grow: 1;
+    overflow-y: auto;
+}
