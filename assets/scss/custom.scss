@@ -16,6 +16,9 @@
     --code-background-color: #f8f8f8;
     // 行内代码前景色
     --code-text-color: #e96900;
+    // 连字
+    --font-feature-settings: "liga" 1, "clig" 1; /* 启用标准连字和上下文连字 */
+    --font-variant-ligatures: common-ligatures;
     // 暗色模式下样式
     &[data-scheme="dark"] {
       // 行内代码背景色

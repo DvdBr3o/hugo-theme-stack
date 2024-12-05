@@ -1,0 +1,17 @@
+<style>
+  @font-face {
+    font-family: 'CaskaydiaCove';
+    src: url({{ (resources.Get "fonts/CaskaydiaCove.woff2").Permalink }}) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'HarmonyOSSans';
+    src: url({{ (resources.Get "fonts/HarmonyOSSans.woff2").Permalink }}) format('truetype');
+  }
+
+
+  :root {
+    --base-font-family: CaskaydiaCove, HarmonyOSSans, sans-serif;
+    --code-font-family: CaskaydiaCove, sans-serif;
+  }
+</style>
