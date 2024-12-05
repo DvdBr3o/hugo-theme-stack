@@ -64,11 +64,12 @@ let Stack = {
     /**
      * Add copy button to code block
      */
+    // 显示语言和复制按钮
     const highlights = document.querySelectorAll(
       ".article-content div.highlight"
     );
-    const copyText = `Copy`,
-      copiedText = `Copied!`;
+    const copyText = `📄拷贝`,
+      copiedText = `已拷贝!`;
 
     highlights.forEach((highlight) => {
       const copyButton = document.createElement("button");
@@ -77,6 +78,8 @@ let Stack = {
       highlight.appendChild(copyButton);
 
       const codeBlock = highlight.querySelector("code[data-lang]");
+      // 获取语言
+      const lang = codeBlock.getAttribute("data-lang");
       if (!codeBlock) return;
 
       copyButton.addEventListener("click", () => {
@@ -96,7 +99,6 @@ let Stack = {
       });
 
       // Add language code button
-      const lang = codeBlock.getAttribute("data-lang");
       const languageButton = document.createElement("button");
       languageButton.innerHTML = lang.toUpperCase() + "&nbsp;&nbsp;";
       languageButton.classList.add("languageCodeButton");
