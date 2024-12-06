@@ -185,3 +185,9 @@ menu:
           params:
             newTab: true
             icon: brand-github
+        - identifier: mastodon
+          name: Mastodon
+          url: https://mastodon.social/@dvdbr3o
+          params:
+            newTab: true
+            icon: brand-mastodon
