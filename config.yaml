@@ -6,7 +6,7 @@ module:
 params:
     mainSections:
         - post
-    featuredImageField: image
+    featuredImageField: cover
     rssFullContent: true
     favicon:
 
@@ -28,7 +28,7 @@ params:
             src: https://s2.loli.net/2024/11/21/sStDMNkwvinG6ce.png
 
     article:
-        headingAnchor: false
+        headingAnchor: true
         math: true
         toc: true
         readingTime: true
@@ -122,6 +122,7 @@ params:
             - type: search
             - type: tag-cloud
             - type: archives
+            - type: categories
         page:
             - type: search
             - type: tag-cloud
