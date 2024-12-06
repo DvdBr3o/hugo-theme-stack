@@ -158,9 +158,15 @@ params:
 menu:
     main:
         - identifier: home
-          name: Home
+          name: 首页
           url: /
           weight: -100
           params:
             icon: home
+            newTab: false
+        - identifier: categories
+          name: 分类
+          weight: -80
+          params:
+            icon: categories
             newTab: false
