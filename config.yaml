@@ -171,3 +171,17 @@ menu:
           params:
             icon: categories
             newTab: false
+    
+    social:
+        - identifier: email
+          name: 邮箱
+          url: mailto:dvdbr3o@qq.com
+          params:
+            newTab: true
+            icon: email
+        - identifier: github
+          name: Github
+          url: https://github.com/DvdBr3o
+          params:
+            newTab: true
+            icon: brand-github
