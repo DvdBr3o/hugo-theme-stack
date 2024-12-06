@@ -166,6 +166,7 @@ menu:
             newTab: false
         - identifier: categories
           name: 分类
+          url: /categories
           weight: -80
           params:
             icon: categories
