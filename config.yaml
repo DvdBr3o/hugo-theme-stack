@@ -126,7 +126,7 @@ params:
         page:
             - type: search
             - type: tag-cloud
-            - type: archives
+            # - type: archives
             - type: toc
 
     opengraph:
