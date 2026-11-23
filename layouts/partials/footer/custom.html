@@ -1,12 +1,12 @@
 <style>
   @font-face {
     font-family: 'CaskaydiaCove';
-    src: url({{ (resources.Get "fonts/CaskaydiaCove.woff2").Permalink }}) format('truetype');
+    src: url({{ (resources.Get "fonts/CaskaydiaCove.woff2").RelPermalink }}) format('truetype');
   }
 
   @font-face {
     font-family: 'HarmonyOSSans';
-    src: url({{ (resources.Get "fonts/HarmonyOSSans.woff2").Permalink }}) format('truetype');
+    src: url({{ (resources.Get "fonts/HarmonyOSSans.woff2").RelPermalink }}) format('truetype');
   }
 
 
@@ -19,7 +19,7 @@
 <style>
   body {
     background-color: var(--body-background);
-    background-image: url({{ (resources.Get "img/background/pixelisland.jpg").Permalink }});
+    background-image: url({{ (resources.Get "img/background/pixelisland.jpg").RelPermalink }});
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
