@@ -19,12 +19,44 @@
     // 连字
     --font-feature-settings: "liga" 1, "clig" 1; /* 启用标准连字和上下文连字 */
     --font-variant-ligatures: common-ligatures;
+    // 正文内链接颜色（主题强调蓝）
+    --article-link-color: #0177b8;
+    --article-link-color-hover: #014f7a;
     // 暗色模式下样式
     &[data-scheme="dark"] {
       // 行内代码背景色
       --code-background-color: #ff6d1b17;
       // 行内代码前景色
       --code-text-color: #e96900;
+      // 正文内链接颜色（暗色下换用亮蓝，保证对比度）
+      --article-link-color: #5bc8f5;
+      --article-link-color-hover: #8adcff;
+    }
+  }
+  
+  //---------------------------------------------------
+  // 正文内链接：使用主题强调蓝，与普通文字区分
+  .article-content {
+    p,
+    li,
+    td,
+    th,
+    blockquote,
+    dd,
+    dt {
+      a:not(.header-anchor):not(.link) {
+        color: var(--article-link-color);
+        font-weight: 500;
+        text-decoration: underline;
+        text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+        text-underline-offset: 3px;
+        transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  
+        &:hover {
+          color: var(--article-link-color-hover);
+          text-decoration-color: currentColor;
+        }
+      }
     }
   }
   

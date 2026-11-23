@@ -1,6 +1,6 @@
 {{- $css := resources.Get "scss/partials/friends.scss" }}
 {{- if $css }}
-{{- $css := $css | resources.ToCSS | resources.Minify }}
+{{- $css = $css | css.Sass | minify }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 {{- end }}
 
