@@ -18,7 +18,10 @@
 
 <style>
   body {
-    background: url({{ (resources.Get "img/background/pixelisland.jpg").Permalink }}) no-repeat center top;
+    background-color: var(--body-background);
+    background-image: url({{ (resources.Get "img/background/pixelisland.jpg").Permalink }});
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
     background-attachment: fixed;
   }
